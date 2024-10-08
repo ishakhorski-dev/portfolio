@@ -14,6 +14,7 @@ import IconLogo from '@/components/icons/IconLogo.vue'
 .header {
     &__container {
         @apply container mx-auto;
+        @apply px-4 md:px-6 py-6 md:py-8;
     }
 }
 </style>

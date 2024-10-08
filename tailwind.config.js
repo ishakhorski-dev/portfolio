@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         black: '#25272c',
-        white: '#fafafa'
+        white: '#fafafa',
+        accent: '#74c69d'
       }
     },
   },

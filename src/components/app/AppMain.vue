@@ -6,10 +6,11 @@
     </main>
 </template>
 
-<style>
+<style lang="scss">
 .main {
     &__container {
         @apply container mx-auto;
+        @apply px-4 md:px-6;
     }
 }
 </style>
