@@ -32,7 +32,7 @@ const onShuffle = () => {
 
 const { stop: stopIntersectionObserver } = useIntersectionObserver(list, ([{ isIntersecting }]) => {
     if (isIntersecting) {
-        intervalId.value = setInterval(onShuffle, TIMEOUT)
+        intervalId.value = window.setInterval(onShuffle, TIMEOUT)
     } else if (intervalId.value) {
         clearInterval(intervalId.value)
     }
