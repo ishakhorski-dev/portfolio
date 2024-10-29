@@ -6,6 +6,7 @@
 @layer base {
     html {
       font-family: "Ubuntu Mono", ui-sans-serif, system-ui, sans-serif;
+      scroll-behavior: smooth;
     }
 
     body {
@@ -28,8 +29,8 @@
     }
 
     .link {
-      @apply flex gap-2;
-      @apply text-black dark:text-white;
+      @apply inline-flex items-center gap-2;
+      @apply text-black dark:text-white underline underline-offset-4;
       @apply transition-[color] duration-75;
       @apply hover:text-accent;
     }

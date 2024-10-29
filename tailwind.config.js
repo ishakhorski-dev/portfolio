@@ -9,7 +9,7 @@ export default {
       colors: {
         black: '#25272c',
         white: '#fafafa',
-        accent: '#74c69d'
+        accent: '#8dc6ff'
       }
     },
   },

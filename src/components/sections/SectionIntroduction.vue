@@ -35,27 +35,23 @@ const vTypewrite = {
 
         <p class="mb-8">Let's build something amazing together!</p>
 
-        <button class="btn btn--primary">Get In Touch</button>
+        <a class="btn btn--primary" href="#contact">Get In Touch</a>
     </AppSection>
 </template>
 
 <style lang="scss">
 #preview {
-    @apply flex flex-col items-center justify-center;
-    @apply py-2;
-
     h1, p {
         @apply text-center;
     }
 
     h1 {
         @apply max-w-[600px];
-        @apply text-3xl md:text-4xl font-bold;
+        @apply text-3xl md:text-4xl;
     }
 
     p {
         @apply max-w-[800px];
-        @apply text-base md:text-lg;
     }
 }
 </style>
