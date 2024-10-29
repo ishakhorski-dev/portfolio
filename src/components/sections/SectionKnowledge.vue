@@ -24,7 +24,7 @@ const images = ref<{ alt: string; src: string }[]>([
     { alt: 'CSS', src: IconCSS }
 ])
 const TIMEOUT = 2000
-const intervalId = ref<number | null>(null)
+const intervalId = ref<Timeout | null>(null)
 
 const onShuffle = () => {
     images.value = shuffle(images.value)
