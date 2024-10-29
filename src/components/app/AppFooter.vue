@@ -40,7 +40,7 @@ import IconGitHub from '@/components/icons/IconGitHub.vue'
 .footer {
     &__container {
         @apply container mx-auto;
-        @apply px-4 md:px-6 py-8 md:py-10;
+        @apply px-6 md:px-8 py-10 md:py-14;
     }
 
     p {

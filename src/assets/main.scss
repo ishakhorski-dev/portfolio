@@ -28,9 +28,31 @@
     }
 
     .link {
+        @apply relative;
         @apply inline-flex items-center gap-2;
-        @apply text-black dark:text-white underline underline-offset-4;
-        @apply transition-[color] duration-75;
-        @apply hover:text-accent;
+        @apply text-black dark:text-white;
+        @apply transition-[color] duration-200;
+
+        &::after {
+            @apply content-[''];
+            @apply absolute;
+            @apply w-full h-[0.05em];
+            @apply bg-primary;
+            @apply left-0 bottom-0;
+            @apply scale-0 opacity-0;
+            @apply origin-bottom;
+            @apply transition-[opacity,transform] duration-200;
+        }
+
+        &:hover,
+        &:focus,
+        &--active {
+            @apply text-primary;
+
+            &::after {
+                @apply scale-100 opacity-100;
+                @apply bg-primary;
+            }
+        }
     }
 }
