@@ -4,7 +4,7 @@ import AppSection from '@/components/app/AppSection.vue'
 import SOCIAL_LINK from '@/constants/social-link'
 
 import IconMail from '@/components/icons/IconMail.vue'
-import IconLinkedIn from '@/components/icons/IconLinkedIn.vue';
+import IconLinkedIn from '@/components/icons/IconLinkedIn.vue'
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import IconLinkedIn from '@/components/icons/IconLinkedIn.vue';
         <div class="contact__card">
             <p class="mb-6">
                 Feel free to reach out to me via email or LinkedIn.
-                <br>
+                <br />
                 I look forward to hearing from you!
             </p>
 
@@ -27,7 +27,12 @@ import IconLinkedIn from '@/components/icons/IconLinkedIn.vue';
                 </li>
 
                 <li>
-                    <a :href="SOCIAL_LINK.LINKED_IN" target="_blank" aria-label="LinkedIn" class="link">
+                    <a
+                        :href="SOCIAL_LINK.LINKED_IN"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                        class="link"
+                    >
                         <IconLinkedIn :size="24" />
                         LinkedIn
                     </a>

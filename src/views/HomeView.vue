@@ -10,17 +10,17 @@ import SectionContact from '@/components/sections/SectionContact.vue'
 </script>
 
 <template>
-  <AppHeader />
+    <AppHeader />
 
-  <AppMain>
-    <SectionIntroduction class="mb-8" />
+    <AppMain>
+        <SectionIntroduction class="mb-8" />
 
-    <SectionKnowledge class="my-8" />
+        <SectionKnowledge class="my-8" />
 
-    <SectionExperience class="my-8" />
+        <SectionExperience class="my-8" />
 
-    <SectionContact class="my-8" />
-  </AppMain>
+        <SectionContact class="my-8" />
+    </AppMain>
 
-  <AppFooter />
+    <AppFooter />
 </template>

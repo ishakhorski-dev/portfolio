@@ -8,9 +8,20 @@ import AppSection from '@/components/app/AppSection.vue'
 
         <ul>
             <li>
-                <h2 class="mb-1">Frontend Developer at <a href="https://innowise.com/" target="_blank" class="link">Innowise.com</a></h2>
+                <h2 class="mb-1">
+                    Frontend Developer at
+                    <a href="https://innowise.com/" target="_blank" class="link">Innowise.com</a>
+                </h2>
                 <p>
-                    As a Frontend Engineer at <a href="https://innowise.com/" target="_blank" class="link">Innowise.com</a>, I was responsible for developing and maintaining web applications for various clients. I had a chance to work on projects in different domains, such as e-commerce, government, machine-learning and marketing. My primary focus was on building robust and scalable architectures within the Vue.js framework, consistently delivering high-performance solutions aligned with business objectives. I was also responsible for mentoring interns and junior developers, conducting code reviews and providing technical guidance to the team.
+                    As a Frontend Engineer at
+                    <a href="https://innowise.com/" target="_blank" class="link">Innowise.com</a>, I
+                    was responsible for developing and maintaining web applications for various
+                    clients. I had a chance to work on projects in different domains, such as
+                    e-commerce, government, machine-learning and marketing. My primary focus was on
+                    building robust and scalable architectures within the Vue.js framework,
+                    consistently delivering high-performance solutions aligned with business
+                    objectives. I was also responsible for mentoring interns and junior developers,
+                    conducting code reviews and providing technical guidance to the team.
                 </p>
             </li>
         </ul>
