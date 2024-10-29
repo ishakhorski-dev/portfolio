@@ -24,7 +24,7 @@ const images = ref<{ alt: string; src: string }[]>([
     { alt: 'CSS', src: IconCSS }
 ])
 const TIMEOUT = 2000
-const intervalId = ref<Timeout | null>(null)
+const intervalId = ref<number | null>(null)
 
 const onShuffle = () => {
     images.value = shuffle(images.value)
@@ -32,7 +32,7 @@ const onShuffle = () => {
 
 const { stop: stopIntersectionObserver } = useIntersectionObserver(list, ([{ isIntersecting }]) => {
     if (isIntersecting) {
-        intervalId.value = setInterval(onShuffle, TIMEOUT)
+        intervalId.value = window.setInterval(onShuffle, TIMEOUT)
     } else if (intervalId.value) {
         clearInterval(intervalId.value)
     }
