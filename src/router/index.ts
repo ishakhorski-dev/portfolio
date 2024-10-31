@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import HomeView from '../views/HomeView.vue'
+
 declare module 'vue-router' {
     interface RouteMeta {}
 }
@@ -10,7 +12,7 @@ const router = createRouter({
         {
             path: '/',
             name: 'home',
-            component: () => import('../views/HomeView.vue')
+            component: HomeView
         }
     ]
 })

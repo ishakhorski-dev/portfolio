@@ -9,7 +9,7 @@ import IconGitHub from '@/components/icons/IconGitHub.vue'
 <template>
     <footer class="footer">
         <div class="footer__container">
-            <div class="flex items-center justify-between gap-2 mb-4">
+            <div class="footer__content mb-4">
                 <a :href="`mailto:${SOCIAL_LINK.EMAIL}`" aria-label="Email" class="link mb-2">
                     <IconMail :size="24" />
                     {{ SOCIAL_LINK.EMAIL }}
@@ -31,7 +31,7 @@ import IconGitHub from '@/components/icons/IconGitHub.vue'
                 </div>
             </div>
 
-            <p>Ivan Shakhorski &copy; 2024</p>
+            <p class="footer__sign">Ivan Shakhorski &copy; 2024</p>
         </div>
     </footer>
 </template>
@@ -43,7 +43,15 @@ import IconGitHub from '@/components/icons/IconGitHub.vue'
         @apply px-6 md:px-8 py-10 md:py-14;
     }
 
-    p {
+    &__text {
+        @apply text-xl font-medium;
+    }
+
+    &__content {
+        @apply flex items-center justify-between gap-2;
+    }
+
+    &__sign {
         @apply text-sm;
     }
 }

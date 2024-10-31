@@ -21,18 +21,4 @@
         @apply text-base md:text-lg;
     }
 }
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .section {
-        animation: fade linear both;
-        animation-timeline: view();
-        animation-range: 10vh 30vh;
-    }
-}
 </style>
