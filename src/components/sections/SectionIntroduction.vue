@@ -24,7 +24,7 @@ const vTypewrite = {
 
 <template>
     <AppSection id="preview">
-        <h1 v-typewrite:80="'Hello, my name is Ivan Shakhorski and I do code!'" class="mb-6"></h1>
+        <h1 v-typewrite:80="'Hello, my name is Ivan Shakhorski and I do code!'" class="mb-2"></h1>
 
         <p class="mb-2">
             I am a software engineer with extensive experience in web development, specializing in
@@ -49,7 +49,7 @@ const vTypewrite = {
     }
 
     h1 {
-        @apply max-w-[600px];
+        @apply max-w-[600px] min-h-[8rem];
         @apply text-3xl md:text-4xl;
     }
 
