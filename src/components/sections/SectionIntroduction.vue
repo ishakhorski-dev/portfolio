@@ -1,30 +1,19 @@
 <script setup lang="ts">
 import AppSection from '@/components/app/AppSection.vue'
 
-const vTypewrite = {
-    beforeMount(el: HTMLElement, binding: { value: string; arg: number }) {
-        const text: string = binding.value || el.textContent || ''
-        const speed: number = Number(binding.arg) || 100
-        let index: number = 0
+import SectionHeading from '@/components/base/SectionHeading.vue'
 
-        el.textContent = ''
+import useTypewrite from '@/composables/useTypewrite'
 
-        function type() {
-            if (index < text.length) {
-                el.textContent += text.charAt(index)
-                index++
-                setTimeout(type, speed)
-            }
-        }
-
-        type()
-    }
-}
+const { vTypewrite } = useTypewrite()
 </script>
 
 <template>
     <AppSection id="preview">
-        <h1 v-typewrite:80="'Hello, my name is Ivan Shakhorski and I do code!'" class="mb-2"></h1>
+        
+        <SectionHeading name="Technologies" href="#preview" class="mb-6">
+            <span v-typewrite:80="'Hello, my name is Ivan Shakhorski and I do code!'"></span>
+        </SectionHeading>
 
         <p class="mb-2">
             I am a software engineer with extensive experience in web development, specializing in

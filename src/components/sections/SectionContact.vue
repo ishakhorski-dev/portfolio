@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import SOCIAL_LINK from '@/constants/social-link'
+
 import AppSection from '@/components/app/AppSection.vue'
 
-import SOCIAL_LINK from '@/constants/social-link'
+import SectionHeading from '@/components/base/SectionHeading.vue';
 
 import IconMail from '@/components/icons/IconMail.vue'
 import IconLinkedIn from '@/components/icons/IconLinkedIn.vue'
@@ -9,7 +11,7 @@ import IconLinkedIn from '@/components/icons/IconLinkedIn.vue'
 
 <template>
     <AppSection id="contact">
-        <h1 class="mb-6">Contact</h1>
+        <SectionHeading name="Contact" href="#contact" class="mb-6" />
 
         <div class="contact__card">
             <p class="mb-6">

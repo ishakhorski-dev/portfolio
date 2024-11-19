@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import AppSection from '@/components/app/AppSection.vue'
+
+import SectionHeading from '@/components/base/SectionHeading.vue'
 </script>
 
 <template>
     <AppSection id="experience">
-        <h1 class="mb-6">Experience</h1>
+        <SectionHeading name="Experience" href="#experience" class="mb-6" />
 
         <ul>
             <li>

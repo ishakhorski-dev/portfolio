@@ -14,6 +14,4 @@ import AppFooter from '@/components/app/AppFooter.vue'
     </AppMain>
 
     <AppFooter />
-
-    <!-- <AppBackgroundModule /> -->
 </template>
