@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import AppSection from '@/components/app/AppSection.vue'
 
-import SectionHeading from '@/components/base/SectionHeading.vue'
+import BaseHeading from '@/components/base/BaseHeading.vue'
 
 import useTypewrite from '@/composables/useTypewrite'
 
@@ -10,10 +10,9 @@ const { vTypewrite } = useTypewrite()
 
 <template>
     <AppSection id="preview">
-        
-        <SectionHeading name="Technologies" href="#preview" class="mb-6">
+        <BaseHeading name="Technologies" href="#preview" class="mb-6">
             <span v-typewrite:80="'Hello, my name is Ivan Shakhorski and I do code!'"></span>
-        </SectionHeading>
+        </BaseHeading>
 
         <p class="mb-2">
             I am a software engineer with extensive experience in web development, specializing in

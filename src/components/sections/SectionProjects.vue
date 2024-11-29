@@ -1,38 +1,42 @@
 <script setup lang="ts">
 import AppSection from '@/components/app/AppSection.vue'
 
-import SectionHeading from '@/components/base/SectionHeading.vue'
+import BaseHeading from '@/components/base/BaseHeading.vue'
+import BaseCard from '@/components/base/BaseCard.vue'
 
 interface Project {
-    name: string;
-    description: string;
+    name: string
+    description: string
 }
 
 const projects: Project[] = [
     {
         name: 'Predictive AI service',
-        description: 'Development of the frontend for a web application with complex business logic. The application enables content personalization and provides automated predictive analytics scores for integration with existing marketing platforms, aiming to improve customer experience, sales, and loyalty.',
+        description:
+            'Development of the frontend for a web application with complex business logic. The application enables content personalization and provides automated predictive analytics scores for integration with existing marketing platforms, aiming to improve customer experience, sales, and loyalty.'
     },
     {
         name: 'Mentorship social network',
-        description: 'The PWA to maintain group mentorship spaces relevant to user needs with different levels of user access, a lot of dynamic content (comments, answers, likes, notifications), and a large admin section for managing users/content or creating reports about interactions with the content.',
+        description:
+            'The PWA to maintain group mentorship spaces relevant to user needs with different levels of user access, a lot of dynamic content (comments, answers, likes, notifications), and a large admin section for managing users/content or creating reports about interactions with the content.'
     },
     {
         name: 'Business Managing platform',
-        description: 'The main objectives of the web app are company compliance with government regulations, effective management of the company, and time savings for the business owner',
+        description:
+            'The main objectives of the web app are company compliance with government regulations, effective management of the company, and time savings for the business owner'
     }
 ]
 </script>
 
 <template>
     <AppSection id="projects">
-        <SectionHeading name="Projects" href="#projects" class="mb-6" />
+        <BaseHeading name="Projects" href="#projects" class="mb-6" />
 
         <ul>
-            <li v-for="project in projects" :key="project.name">
-                <h2> {{ project.name }} </h2>
-                <p> {{ project.description }} </p>
-            </li>
+            <BaseCard as="li" v-for="project in projects" :key="project.name">
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.description }}</p>
+            </BaseCard>
         </ul>
     </AppSection>
 </template>
@@ -40,11 +44,8 @@ const projects: Project[] = [
 <style lang="scss">
 #projects {
     ul {
-        @apply w-full max-w-[800px];
-
-        li + li {
-            @apply mt-8;
-        }
+        @apply w-full max-w-[1080px];
+        @apply grid lg:grid-flow-col gap-4;
     }
 }
 </style>

@@ -16,5 +16,5 @@ import AppBackground from '@/components/app/AppBackground.vue'
         </AppMain>
 
         <AppFooter />
-    </AppBackground >
+    </AppBackground>
 </template>

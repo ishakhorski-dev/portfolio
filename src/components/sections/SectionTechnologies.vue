@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import AppSection from '@/components/app/AppSection.vue'
 
-import SectionHeading from '@/components/base/SectionHeading.vue'
+import BaseHeading from '@/components/base/BaseHeading.vue'
 
 import IconVue from '@/assets/images/vue.svg'
 import IconNuxt from '@/assets/images/nuxt.svg'
@@ -11,8 +11,8 @@ import IconHTML from '@/assets/images/html.svg'
 import IconCSS from '@/assets/images/css.svg'
 
 interface Image {
-    alt: string;
-    src: string;
+    alt: string
+    src: string
 }
 
 const images: Image[] = [
@@ -27,7 +27,7 @@ const images: Image[] = [
 
 <template>
     <AppSection id="technologies">
-        <SectionHeading name="Technologies" href="#technologies" class="mb-6" />
+        <BaseHeading name="Technologies" href="#technologies" class="mb-6" />
 
         <ul>
             <li v-for="image in images" :key="image.alt">

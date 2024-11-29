@@ -7,7 +7,9 @@ const props = defineProps<{
 
 <template>
     <a :href="props.href" class="section-heading">
-        <h1><slot>{{ props.name }}</slot></h1>
+        <h1>
+            <slot>{{ props.name }}</slot>
+        </h1>
     </a>
 </template>
 
