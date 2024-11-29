@@ -34,16 +34,13 @@ const { vTypewrite } = useTypewrite()
 #preview {
     h1,
     p {
+        @apply max-w-[800px];
         @apply text-center;
     }
 
     h1 {
-        @apply max-w-[600px] min-h-[8rem];
+        @apply min-h-[8rem];
         @apply text-3xl md:text-4xl;
-    }
-
-    p {
-        @apply max-w-[800px];
     }
 }
 </style>

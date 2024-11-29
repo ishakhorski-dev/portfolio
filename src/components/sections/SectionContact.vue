@@ -15,7 +15,7 @@ import IconLinkedIn from '@/components/icons/IconLinkedIn.vue'
 
         <div class="contact__card">
             <p class="mb-6">
-                Feel free to reach out to me via email or LinkedIn.
+                Feel free to reach out to me via Email or LinkedIn.
                 <br />
                 I look forward to hearing from you!
             </p>
@@ -47,7 +47,7 @@ import IconLinkedIn from '@/components/icons/IconLinkedIn.vue'
 <style lang="scss">
 #contact {
     .contact__card {
-        @apply w-full max-w-[800px];
+        @apply w-full max-w-[600px];
         @apply rounded-lg;
         @apply bg-white/5 dark:bg-black/5;
         @apply border border-black/10 dark:border-white/10;

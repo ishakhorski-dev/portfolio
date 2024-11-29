@@ -4,14 +4,17 @@ import { RouterView } from 'vue-router'
 import AppHeader from '@/components/app/AppHeader.vue'
 import AppMain from '@/components/app/AppMain.vue'
 import AppFooter from '@/components/app/AppFooter.vue'
+import AppBackground from '@/components/app/AppBackground.vue'
 </script>
 
 <template>
-    <AppHeader />
+    <AppBackground>
+        <AppHeader />
 
-    <AppMain>
-        <RouterView />
-    </AppMain>
+        <AppMain>
+            <RouterView />
+        </AppMain>
 
-    <AppFooter />
+        <AppFooter />
+    </AppBackground >
 </template>

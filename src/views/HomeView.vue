@@ -2,7 +2,7 @@
 import SectionIntroduction from '@/components/sections/SectionIntroduction.vue'
 import SectionTechnologies from '@/components/sections/SectionTechnologies.vue'
 import SectionExperience from '@/components/sections/SectionExperience.vue'
-// import SectionProjects from '@/components/sections/SectionProjects.vue'
+import SectionProjects from '@/components/sections/SectionProjects.vue'
 import SectionContact from '@/components/sections/SectionContact.vue'
 </script>
 
@@ -13,7 +13,7 @@ import SectionContact from '@/components/sections/SectionContact.vue'
 
     <SectionExperience />
 
-    <!-- <SectionProjects /> -->
+    <SectionProjects />
 
     <SectionContact />
 </template>
