@@ -11,19 +11,19 @@ interface Project {
 
 const projects: Project[] = [
     {
-        name: 'Predictive AI service',
+        name: 'Service for Predictive AI Marketing optimization',
         description:
-            'Development of the frontend for a web application with complex business logic. The application enables content personalization and provides automated predictive analytics scores for integration with existing marketing platforms, aiming to improve customer experience, sales, and loyalty.'
+            'I was responsible for the development of the frontend part for a service that allows users to upload their data, train a model, and get predictions. The main goal was to make the service user-friendly and easy to use for people without a technical background.'
     },
     {
-        name: 'Mentorship social network',
+        name: 'Social Network for Mentorship',
         description:
-            'The PWA to maintain group mentorship spaces relevant to user needs with different levels of user access, a lot of dynamic content (comments, answers, likes, notifications), and a large admin section for managing users/content or creating reports about interactions with the content.'
+            'I was responsible for the development of the frontend part for a social network that connects mentors and mentees. The platform allows users to create profiles, connect with others, schedule meetings, comment and react to posts.'
     },
     {
-        name: 'Business Managing platform',
+        name: 'Platform fo Buisness Management',
         description:
-            'The main objectives of the web app are company compliance with government regulations, effective management of the company, and time savings for the business owner'
+            'I was responsible for the development of the frontend part for a platform that allows users to manage their business. The platform includes features like managing employees, contracts, sign documents, and more.'
     }
 ]
 </script>
@@ -34,7 +34,7 @@ const projects: Project[] = [
 
         <ul>
             <BaseCard as="li" v-for="project in projects" :key="project.name">
-                <h2>{{ project.name }}</h2>
+                <h2 class="mb-2">{{ project.name }}</h2>
                 <p>{{ project.description }}</p>
             </BaseCard>
         </ul>
